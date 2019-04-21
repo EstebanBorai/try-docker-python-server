@@ -1,0 +1,25 @@
+# using version 3 of docker-compose
+version: "3"
+# define services, 1 service = 1 container
+services:
+  server:
+    # specify the directory for the server's service Dockerfile
+    build: server/
+    # specify the directory for the server's service Dockerfile
+    command: python ./server.py
+    # port to launch
+    ports:
+      - 8080:8080
+  
+  client:
+    # specify the directory for the client's service Dockerfile
+    build: client/
+    # specify the directory for the server's service Dockerfile
+    command: python ./client.py
+    # network type, host mode means that the container car access the 'localhost' 
+    # of this computer
+    network_mode: host
+    # defines which service the current service depends in order to work
+    depends_on:
+      - server
+
