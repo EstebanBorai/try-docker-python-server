@@ -1,6 +1,10 @@
 # try-docker-python-server
 🐳 A pretty simple try on Docker with a server written in Python
 
+# Motivation
+Learn more about Docker.
+Based on: [Gael Thomas, How to create a client/server side with Docker-Compose](https://medium.freecodecamp.org/a-beginners-guide-to-docker-how-to-create-a-client-server-side-with-docker-compose-12c8cf0ae0aa)
+
 # Running the Docker Containers
 In order to accomplish the steps ahead successfully, you must install Docker first.
 [Docker Official Website](https://www.docker.com/get-started)
